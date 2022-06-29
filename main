@@ -1,0 +1,108 @@
+--Made By Sheessh
+
+local RemadePremiumScreen = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local Gui = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+local Ms2 = Instance.new("TextButton")
+local Arsenal = Instance.new("TextButton")
+local DaHood = Instance.new("TextButton")
+local openmain = Instance.new("Frame")
+local open = Instance.new("TextButton")
+
+--Properties:
+
+RemadePremiumScreen.Name = "Remade Premium Screen"
+RemadePremiumScreen.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = RemadePremiumScreen
+main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+main.Position = UDim2.new(0.375077128, 0, 0.439809293, 0)
+main.Size = UDim2.new(0, 278, 0, 167)
+main.Visible = false
+main.Active = true
+main.Draggable = true
+
+Gui.Name = "Gui"
+Gui.Parent = main
+Gui.BackgroundColor3 = Color3.fromRGB(59, 255, 0)
+Gui.Size = UDim2.new(0, 278, 0, 50)
+Gui.Font = Enum.Font.GothamBold
+Gui.Text = "Remade Premium Gui"
+Gui.TextColor3 = Color3.fromRGB(0, 0, 0)
+Gui.TextSize = 14.000
+
+Close.Name = "Close"
+Close.Parent = main
+Close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Close.Position = UDim2.new(0.816546738, 0, 0, 0)
+Close.Size = UDim2.new(0, 51, 0, 50)
+Close.Font = Enum.Font.GothamBold
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(0, 0, 0)
+Close.TextSize = 16.000
+Close.MouseButton1Down:connect(function()
+main.Visible = false
+openmain.Visible = true
+end)
+
+Ms2.Name = "Ms2"
+Ms2.Parent = main
+Ms2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Ms2.Position = UDim2.new(0.0611510761, 0, 0.383233547, 0)
+Ms2.Size = UDim2.new(0, 116, 0, 38)
+Ms2.Font = Enum.Font.GothamBold
+Ms2.Text = "Ms2"
+Ms2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Ms2.TextSize = 14.000
+Ms2.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/rblxscriptsnet/rblxhub/main/rblxhub.lua"))()
+end)
+
+Arsenal.Name = "Arsenal"
+Arsenal.Parent = main
+Arsenal.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Arsenal.Position = UDim2.new(0.517985582, 0, 0.383233547, 0)
+Arsenal.Size = UDim2.new(0, 116, 0, 38)
+Arsenal.Font = Enum.Font.GothamBold
+Arsenal.Text = "Arsenal"
+Arsenal.TextColor3 = Color3.fromRGB(0, 0, 0)
+Arsenal.TextSize = 14.000
+Arsenal.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fusiongreg/BoltsHubV5/main/BoltsHubV5"))()
+end)
+
+DaHood.Name = "Da Hood"
+DaHood.Parent = main
+DaHood.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DaHood.Position = UDim2.new(0.291366875, 0, 0.682634711, 0)
+DaHood.Size = UDim2.new(0, 116, 0, 38)
+DaHood.Font = Enum.Font.GothamBold
+DaHood.Text = "Da Hood"
+DaHood.TextColor3 = Color3.fromRGB(0, 0, 0)
+DaHood.TextSize = 14.000
+DaHood.MouseButton1Down:connect(function()
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/PolarWasHere/Arctic/main/Arctic"))()
+end)
+
+openmain.Name = "openmain"
+openmain.Parent = RemadePremiumScreen
+openmain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+openmain.Position = UDim2.new(0, 0, 0.309892744, 0)
+openmain.Size = UDim2.new(0, 107, 0, 47)
+openmain.Active = true
+openmain.Draggable = true
+
+open.Name = "open"
+open.Parent = openmain
+open.BackgroundColor3 = Color3.fromRGB(85, 170, 255)
+open.Size = UDim2.new(0, 107, 0, 50)
+open.Font = Enum.Font.GothamBold
+open.Text = "Open"
+open.TextColor3 = Color3.fromRGB(0, 0, 0)
+open.TextSize = 15.000
+open.MouseButton1Down:connect(function()
+openmain.Visible = false
+main.Visible = true
+end)
